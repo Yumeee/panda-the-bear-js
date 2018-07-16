@@ -1,3 +1,4 @@
+Part 1
 1. Element that contains the profile image
 var image = document.querySelector('img')
 image.src =  "https://assets.change.org/photos/9/vb/ck/SjvBckptvTHTuGQ-400x400-noPad.jpg?1509404753"
@@ -57,3 +58,17 @@ newcolor.style.color = '#e6ffe6';
 14. We should help Panda protect their privacy by erasing their personal details from the sidebar.
 var sidebarInfo = document.querySelector('.bio-info')
 sidebarInfo.remove()
+
+Part 2
+1. Removing elements from the DOM
+var bar = document.querySelector('#time-travel')
+bar.parentNode.remove()
+
+2.  Adding elements
+var pikachu = document.querySelector('#right-image');
+var pikachuCopy = pikachu.firstElementChild;
+var PikachuClone = pikachuCopy.cloneNode();
+var portfolio = document.querySelector('div.portfolio-container');
+portfolio.appendChild(PikachuClone);
+
+3. Use a for loop to help you do this 10 times.
